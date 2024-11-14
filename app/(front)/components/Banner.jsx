@@ -4,6 +4,7 @@ import { IoPersonAddOutline } from "react-icons/io5";
 import { MdExitToApp } from "react-icons/md";
 import { TbReport } from "react-icons/tb";
 import { IoSettingsOutline } from "react-icons/io5";
+import Link from "next/link";
 
 
 
@@ -18,7 +19,7 @@ const Banner = () => {
         </div>
         <div className='flex gap-3 hover:shadow  items-center pl-2 py-3 flex-row rounded-lg hover:scale-105 hover:cursor-pointer bg-[#B9E5E8]'>
           <IoPersonAddOutline  className="size-6"/>
-          <p className='text-xl text-white font-bold font-sans'>Add Session</p>
+          <Link href="/addingSession" className='text-xl text-white font-bold font-sans'>Add Session</Link>
         </div>
         <div className='flex gap-3 hover:shadow  items-center pl-2 py-3 flex-row rounded-lg hover:scale-105 hover:cursor-pointer bg-[#B9E5E8]'>
           <MdExitToApp  className="size-6"/>
@@ -155,3 +156,9 @@ const Banner = () => {
 }
 
 export default Banner
+
+
+
+// work to do
+// 1. after time limit expire bg-red
+// 2. after adding a new session that is show in dashboard screen
