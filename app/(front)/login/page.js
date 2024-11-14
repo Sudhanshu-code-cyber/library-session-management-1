@@ -29,7 +29,7 @@ const page = () => {
             <option> 5 hours</option>   
            </select>
            </div>
-           <button type='submit' className="bg-[#4A628A] text-white font-semibold font-sans w-full py-2 my-3 rounded-md text-base">Login</button>
+           <button type='submit' className="bg-[#4A628A] mt-5 text-white font-semibold font-sans w-full py-2 my-3 rounded-md text-base">Login</button>
         </form>
         <div className='flex pt-2 gap-1'>
             <p className='font-sans font-semibold text-gray-500 '>Create an new account? </p>
