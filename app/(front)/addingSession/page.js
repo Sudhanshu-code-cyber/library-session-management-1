@@ -2,8 +2,8 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div className='flex flex-col'>
-      <div className='flex text-4xl font-sans font-semibold bg-[#4A628A] text-[#DFF2Eb] shadow-b-xl justify-center py-5 '>
+    <div className='flex flex-col mt-5 items-center'>
+      <div className='flex text-4xl font-sans px-10 rounded font-semibold w-fit  bg-[#4A628A] text-[#DFF2Eb] shadow-b-xl justify-center py-5 '>
         Add Session
         </div>
      
