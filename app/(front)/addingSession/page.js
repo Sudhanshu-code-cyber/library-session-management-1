@@ -73,7 +73,7 @@ const page = () => {
         </form>
         <div className='flex pt-2 gap-1'>
             <p className='font-sans font-semibold text-gray-500 '>Already have an account?</p>
-            <Link  href="/account" className='text-blue-600 font-sans'> Login here</Link>
+            <Link  href="/login" className='text-blue-600 font-sans'> Login here</Link>
         </div>
     </div>
   )
