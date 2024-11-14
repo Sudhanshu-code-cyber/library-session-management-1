@@ -17,10 +17,10 @@ const Banner = () => {
           <RxDashboard  className="size-6"/>
           <p className='text-xl text-white font-bold font-sans'>Dashboard</p>
         </div>
-        <div className='flex gap-3 hover:shadow  items-center pl-2 py-3 flex-row rounded-lg hover:scale-105 hover:cursor-pointer bg-[#B9E5E8]'>
+        <Link href="/login" className='flex gap-3 hover:shadow  items-center pl-2 py-3 flex-row rounded-lg hover:scale-105 hover:cursor-pointer bg-[#B9E5E8]'>
           <IoPersonAddOutline  className="size-6"/>
-          <Link href="/addingSession" className='text-xl text-white font-bold font-sans'>Add Session</Link>
-        </div>
+          <p  className='text-xl text-white font-bold font-sans'>Add Session</p>
+        </Link>
         <div className='flex gap-3 hover:shadow  items-center pl-2 py-3 flex-row rounded-lg hover:scale-105 hover:cursor-pointer bg-[#B9E5E8]'>
           <MdExitToApp  className="size-6"/>
           <p className='text-xl text-white font-bold font-sans'>Manage CheckOuts</p>
@@ -41,7 +41,7 @@ const Banner = () => {
       <div className="flex flex-col gap-5 w-9/12">
       <h2 className="text-2xl font-bold font-sans">Realtime Sessions(13)</h2>
       <div className="grid grid-cols-4 gap-3">
-        <div className="bg-red-200 flex flex-row gap-2 w-fit rounded shadow p-5">
+        <div className="bg-red-200 flex flex-row gap-2 w-fit rounded shadow p-5 border border-b-4 border-b-red-600">
            <div className="flex flex-col text-sm">
               <p>Pince raj</p>
               <p>15:40 PM</p>
@@ -53,7 +53,7 @@ const Banner = () => {
               <p>CheckOut</p>
            </div>
         </div>
-        <div className="bg-red-200 flex flex-row gap-2 w-fit rounded shadow p-5">
+        <div className="bg-red-200 flex flex-row gap-2 w-fit rounded border border-b-4 border-b-red-600 shadow p-5">
            <div className="flex flex-col text-sm">
               <p>Pince raj</p>
               <p>15:40 PM</p>
@@ -65,7 +65,7 @@ const Banner = () => {
               <p>CheckOut</p>
            </div>
         </div>
-        <div className="bg-red-200 flex flex-row gap-2 w-fit rounded shadow p-5">
+        <div className="bg-red-200 flex flex-row gap-2 w-fit rounded shadow p-5 border border-b-4 border-b-red-600">
            <div className="flex flex-col text-sm">
               <p>Pince raj</p>
               <p>15:40 PM</p>
@@ -77,7 +77,7 @@ const Banner = () => {
               <p>CheckOut</p>
            </div>
         </div>
-        <div className="bg-red-200 flex flex-row gap-2 w-fit rounded shadow p-5">
+        <div className="bg-red-200 flex flex-row gap-2 w-fit rounded shadow p-5 border border-b-4 border-b-red-600">
            <div className="flex flex-col text-sm">
               <p>Pince raj</p>
               <p>15:40 PM</p>
@@ -89,7 +89,7 @@ const Banner = () => {
               <p>CheckOut</p>
            </div>
         </div>
-        <div className="bg-red-200 flex flex-row gap-2 w-fit rounded shadow p-5">
+        <div className="bg-red-200 flex flex-row gap-2 w-fit rounded shadow p-5 border border-b-4 border-b-red-600">
            <div className="flex flex-col text-sm">
               <p>Pince raj</p>
               <p>15:40 PM</p>
@@ -101,7 +101,7 @@ const Banner = () => {
               <p>CheckOut</p>
            </div>
         </div>
-        <div className="bg-red-200 flex flex-row gap-2 w-fit rounded shadow p-5">
+        <div className="bg-red-200 flex flex-row gap-2 w-fit rounded shadow p-5 border border-b-4 border-b-red-600">
            <div className="flex flex-col text-sm">
               <p>Pince raj</p>
               <p>15:40 PM</p>
@@ -113,7 +113,7 @@ const Banner = () => {
               <p>CheckOut</p>
            </div>
         </div>
-        <div className="bg-red-200 flex flex-row gap-2 w-fit rounded shadow p-5">
+        <div className="bg-red-200 flex flex-row gap-2 w-fit rounded shadow p-5 border border-b-4 border-b-red-600">
            <div className="flex flex-col text-sm">
               <p>Pince raj</p>
               <p>15:40 PM</p>
@@ -125,7 +125,7 @@ const Banner = () => {
               <p>CheckOut</p>
            </div>
         </div>
-        <div className="bg-red-200 flex flex-row gap-2 w-fit rounded shadow p-5">
+        <div className="bg-red-200 flex flex-row gap-2 w-fit rounded shadow p-5 border border-b-4 border-b-red-600">
            <div className="flex flex-col text-sm">
               <p>Pince raj</p>
               <p>15:40 PM</p>
@@ -137,7 +137,7 @@ const Banner = () => {
               <p>CheckOut</p>
            </div>
         </div>
-        <div className="bg-red-200 flex flex-row gap-2 w-fit rounded shadow p-5">
+        <div className="bg-red-200 flex flex-row gap-2 w-fit rounded shadow p-5 border border-b-4 border-b-red-600">
            <div className="flex flex-col text-sm">
               <p>Pince raj</p>
               <p>15:40 PM</p>
