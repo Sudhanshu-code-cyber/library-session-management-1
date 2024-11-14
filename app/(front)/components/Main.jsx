@@ -5,7 +5,6 @@ import Navbar from './Navbar'
 const Main = () => {
   return (
     <div>
-      <Navbar/>
         <Sidebar/>
     </div>
   )
