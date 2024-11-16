@@ -5,6 +5,10 @@ import { MdExitToApp } from "react-icons/md";
 import { TbReport } from "react-icons/tb";
 import { IoSettingsOutline } from "react-icons/io5";
 import Link from "next/link";
+import { IoLocationOutline } from "react-icons/io5";
+import { IoMdTime } from "react-icons/io";
+import { FaReceipt } from "react-icons/fa6";
+
 
 
 
@@ -38,117 +42,30 @@ const Banner = () => {
           <p className='text-xl text-white font-bold font-sans'>Roles</p>
         </div>
       </div>
+      {/* sidebar end */}
       <div className="flex flex-col gap-5 w-9/12">
       <h2 className="text-2xl font-bold font-sans">Realtime Sessions(13)</h2>
       <div className="grid grid-cols-4 gap-3">
-        <div className="bg-red-200 flex flex-row gap-2 w-fit rounded shadow p-5 border border-b-4 border-b-red-600">
-           <div className="flex flex-col text-sm">
+        <div className="bg-red-200 flex flex-row justify-between  w-[40vh] rounded shadow p-5 border border-b-4 border-b-red-600">
+           <div className="flex gap-4 flex-col text-sm">
               <p>Pince raj</p>
-              <p>15:40 PM</p>
+              <div className="flex gap-1 items-center">
+              <IoLocationOutline />
+               <p>15:40 PM</p>
+              </div>
               <p>Time left:0h 23m left</p>
            </div>
-           <div className="flex flex-col gap-2 text-sm">
-              <p>0.5 hours</p>
-              <p>reciept</p>
+           <div className="flex flex-col gap-4 text-sm">
+              <div  className="flex gap-1 w-full  items-center  ">
+              <IoMdTime  />
+             <p>  0.5 hours</p></div>
+            <div className="flex items-center gap-1"> <FaReceipt />
+            <p>reciept</p></div>
               <p>CheckOut</p>
            </div>
         </div>
-        <div className="bg-red-200 flex flex-row gap-2 w-fit rounded border border-b-4 border-b-red-600 shadow p-5">
-           <div className="flex flex-col text-sm">
-              <p>Pince raj</p>
-              <p>15:40 PM</p>
-              <p>Time left:0h 23m left</p>
-           </div>
-           <div className="flex flex-col gap-2 text-sm">
-              <p>0.5 hours</p>
-              <p>reciept</p>
-              <p>CheckOut</p>
-           </div>
-        </div>
-        <div className="bg-red-200 flex flex-row gap-2 w-fit rounded shadow p-5 border border-b-4 border-b-red-600">
-           <div className="flex flex-col text-sm">
-              <p>Pince raj</p>
-              <p>15:40 PM</p>
-              <p>Time left:0h 23m left</p>
-           </div>
-           <div className="flex flex-col gap-2 text-sm">
-              <p>0.5 hours</p>
-              <p>reciept</p>
-              <p>CheckOut</p>
-           </div>
-        </div>
-        <div className="bg-red-200 flex flex-row gap-2 w-fit rounded shadow p-5 border border-b-4 border-b-red-600">
-           <div className="flex flex-col text-sm">
-              <p>Pince raj</p>
-              <p>15:40 PM</p>
-              <p>Time left:0h 23m left</p>
-           </div>
-           <div className="flex flex-col gap-2 text-sm">
-              <p>0.5 hours</p>
-              <p>reciept</p>
-              <p>CheckOut</p>
-           </div>
-        </div>
-        <div className="bg-red-200 flex flex-row gap-2 w-fit rounded shadow p-5 border border-b-4 border-b-red-600">
-           <div className="flex flex-col text-sm">
-              <p>Pince raj</p>
-              <p>15:40 PM</p>
-              <p>Time left:0h 23m left</p>
-           </div>
-           <div className="flex flex-col gap-2 text-sm">
-              <p>0.5 hours</p>
-              <p>reciept</p>
-              <p>CheckOut</p>
-           </div>
-        </div>
-        <div className="bg-red-200 flex flex-row gap-2 w-fit rounded shadow p-5 border border-b-4 border-b-red-600">
-           <div className="flex flex-col text-sm">
-              <p>Pince raj</p>
-              <p>15:40 PM</p>
-              <p>Time left:0h 23m left</p>
-           </div>
-           <div className="flex flex-col gap-2 text-sm">
-              <p>0.5 hours</p>
-              <p>reciept</p>
-              <p>CheckOut</p>
-           </div>
-        </div>
-        <div className="bg-red-200 flex flex-row gap-2 w-fit rounded shadow p-5 border border-b-4 border-b-red-600">
-           <div className="flex flex-col text-sm">
-              <p>Pince raj</p>
-              <p>15:40 PM</p>
-              <p>Time left:0h 23m left</p>
-           </div>
-           <div className="flex flex-col gap-2 text-sm">
-              <p>0.5 hours</p>
-              <p>reciept</p>
-              <p>CheckOut</p>
-           </div>
-        </div>
-        <div className="bg-red-200 flex flex-row gap-2 w-fit rounded shadow p-5 border border-b-4 border-b-red-600">
-           <div className="flex flex-col text-sm">
-              <p>Pince raj</p>
-              <p>15:40 PM</p>
-              <p>Time left:0h 23m left</p>
-           </div>
-           <div className="flex flex-col gap-2 text-sm">
-              <p>0.5 hours</p>
-              <p>reciept</p>
-              <p>CheckOut</p>
-           </div>
-        </div>
-        <div className="bg-red-200 flex flex-row gap-2 w-fit rounded shadow p-5 border border-b-4 border-b-red-600">
-           <div className="flex flex-col text-sm">
-              <p>Pince raj</p>
-              <p>15:40 PM</p>
-              <p>Time left:0h 23m left</p>
-           </div>
-           <div className="flex flex-col gap-2 text-sm">
-              <p>0.5 hours</p>
-              <p>reciept</p>
-              <p>CheckOut</p>
-           </div>
-        </div>
+       
+      
       </div>
       </div>
     </div>
