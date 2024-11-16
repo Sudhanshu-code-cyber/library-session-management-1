@@ -24,7 +24,7 @@ const page = () => {
       mobile: mobile,
       email: email,
     });
-    redirect("/login")
+    redirect("/login") 
   };
   return (
     <div className="flex flex-col mt-5 items-center">
@@ -32,7 +32,7 @@ const page = () => {
         Add Session
       </div>
 
-      <form action={handleInsert} className="flex justify-center p-5 flex-col gap-5 ">
+      <form action={handleInsert} className="flex justify-center bg-[#B9E5E6] mt-5 rounded shadow-xl p-5 flex-col gap-5 ">
         <div className="flex w-full justify-start gap-5 ">
           <label htmlFor="studentName" className="text-xl w-fit  font-semibold font-sans ">
             Student Name :
