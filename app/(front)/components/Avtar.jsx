@@ -15,7 +15,7 @@ const Avatar = () => {
         type="button"
         onClick={toggleDropdown}
         className="w-10 h-10 rounded-full cursor-pointer"
-        src="/docs/images/people/profile-picture-5.jpg"
+        src="user.jpg"
         alt="User dropdown"
       />
 

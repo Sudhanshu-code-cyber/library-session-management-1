@@ -1,5 +1,5 @@
 import Connect from "@/app/db/Connect";
-import newSession from "@/app/models/newSession";
+import newSession from "@/app/models/NewSession";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import React from "react";
@@ -24,7 +24,7 @@ const page = () => {
       mobile: mobile,
       email: email,
     });
-    redirect("/login") 
+    redirect("/student-details") 
   };
   return (
     <div className="flex flex-col mt-5 items-center">
