@@ -1,46 +1,67 @@
-import Connect from '@/app/db/Connect'
-import { redirect } from 'next/navigation';
-import NewSession from '@/app/models/NewSession';
-import React from 'react'
+import Connect from "@/app/db/Connect";
+import NewSession from "@/app/models/NewSession";
+import { redirect } from "next/navigation"; 
+import React from "react";
 
-const page = async() => {
-    Connect();
-    const callingRecords = await NewSession.find()
-    
-    // const handleStartSession = async (FormData)=>{
-    //     "use server"
-    //     let id = FormData.get("recordId")
+const Callingdata = async () => {
+  await Connect();
 
-    //     await newSession.findByIdAndDelete()
-    //     redirect("/student-details")
-    // }
+ 
+  const CallingRecords = await NewSession.find();
+
+  const handleDelete = async (formData) => {
+    "use server";
+    let id = formData.get("recordId");
+
+    await NewSession.findByIdAndDelete(id); 
+    redirect("/"); 
+  };
 
   return (
-    <div className='flex flex-col gap-5 items-center justify-center'>
-        <h1 className="flex text-2xl mt-5 font-sans px-10 rounded font-semibold w-fit  bg-[#4A628A] text-[#DFF2Eb] shadow-b-xl justify-center py-2 ">
-            Student Details
-      </h1>
-      <div>
-        {
-            callingRecords.map((record,index)=>{
-                return(
-                  <div key={index} className='bg-green-500 mb-5'>
-                    <h1>{record.studentName}</h1>
-                    <h1>{record.fatherName}</h1>
-                    <h1>{record.mobile}</h1>
-                    <h1>{record.pin}</h1>
-                    <h1>{record.add}</h1>
-                    <h1>{record.email}</h1>
-                </div>
-                )
-            })
-        }
-        {/* <form action={handleStartSession} method='POST'>
-
-        </form> */}
-        </div>
+    <div className="flex flex-col items-center my-10 px-5">
+      <h1 className="text-3xl font-bold text-[#195758] mb-5">Student Records</h1>
+      <table className="table-auto border-collapse border-2 border-[#195758] w-full max-w-screen-lg shadow-lg rounded-lg overflow-hidden">
+        <thead>
+          <tr className="bg-[#37babd] text-white text-lg">
+            <th className="border p-3 text-center">No.</th>
+            <th className="border p-3 text-center">Student Name</th>
+            <th className="border p-3 text-center">Father's Name</th>
+            <th className="border p-3 text-center">Address</th>
+            <th className="border p-3 text-center">Pin Code</th>
+            <th className="border p-3 text-center">Mobile No.</th>
+            <th className="border p-3 text-center">Email Id</th>
+            <th className="border p-3 text-center">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          {CallingRecords.map((record, index) => (
+            <tr
+              key={record._id}
+              className="hover:bg-[#f4f4f4] transition-colors duration-300 ease-in-out"
+            >
+              <td className="border p-4 text-center">{index + 1}</td>
+              <td className="border p-4 text-center">{record.studentName}</td>
+              <td className="border p-4 text-center">{record.fatherName}</td>
+              <td className="border p-4 text-center">{record.add}</td>
+              <td className="border p-4 text-center">{record.pin}</td>
+              <td className="border p-4 text-center">{record.mobile}</td>
+              <td className="border p-4 text-center">{record.email}</td>
+              <td className="border p-4 text-center">
+                {/* <form action={handleDelete} method="POST" className="mt-5">
+                  <input type="hidden" name="recordId" value={record.id} />
+                  <input
+                    type="submit"
+                    className="bg-red-500 text-white px-3 py-2 rounded hover:bg-red-600 transition duration-300"
+                    value="Delete"
+                  />
+                </form> */}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default Callingdata;

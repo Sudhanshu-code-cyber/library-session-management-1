@@ -35,7 +35,7 @@ const page = () => {
       <form action={handleInsert} className="flex justify-center bg-[#B9E5E6] mt-5 rounded shadow-xl p-5 flex-col gap-5 ">
         <div className="flex w-full justify-start gap-5 ">
           <label htmlFor="studentName" className="text-xl w-fit  font-semibold font-sans ">
-            Student Name :
+            Student Name:
           </label>
           <input
             id="studentName"
@@ -46,7 +46,7 @@ const page = () => {
         </div>
         <div className="flex w-full justify-start gap-5 ">
           <label htmlFor="fatherName" className="text-xl w-fit  font-semibold font-sans ">
-            Father's Name :
+            Father's Name:
           </label>
           <input
             id="fatherName"
@@ -86,7 +86,7 @@ const page = () => {
             id="mobile"
             name="mobile"
             type="Number"
-            className="p-1 w-[70vh] rounded ml-28 hover:border-[#4A628A] border  outline-none"
+            className="p-1 w-[70vh] rounded ml-24 hover:border-[#4A628A] border  outline-none"
             required
           />
         </div>
