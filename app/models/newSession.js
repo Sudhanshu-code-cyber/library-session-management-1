@@ -9,4 +9,4 @@ const NewSessionSchema = new mongoose.Schema({
     email:{type:String,required:true},
 })
 
-export default mongoose.models.NewSession || mongoose.model("NewSession", NewSessionSchema)
+export default mongoose.models.NewSession || mongoose.model("NewSession", NewSessionSchema);
