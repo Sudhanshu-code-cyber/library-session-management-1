@@ -17,26 +17,17 @@ import Sidebar from "../components/Sidebar";
       let mobile = formData.get("mobile");
       let email = formData.get("email");
 
-      console.log("rama")
-      console.log(formData)
-
-      //  Connect();
-
-      // let newData = await newSession.create({
-      //   studentName: studentName,
-      //   fatherName: fatherName,
-      //   add: add,
-      //   pin: pin,
-      //   mobile: mobile,
-      //   email: email,
-
-      // });
-      // console.log("rama011")
-      // console.log(formData)
       try {
         // Connect to the database
         Connect();
-  
+
+        let checkData = await NewSession.findOne({email})
+
+
+        if(checkData){
+          console.log("email already exist");
+        }
+        else{
         // Insert data into MongoDB using the newSession model
         await NewSession.create({
           studentName,
@@ -46,21 +37,17 @@ import Sidebar from "../components/Sidebar";
           mobile,
           email,
         });
+      }
+      redirect("/student-details");
   
         // Redirect after successful insertion
-        redirect("/student-details");
       } catch (error) {
         console.error("Error inserting adding data", error);
       }
-  
-
-      redirect("/student-details") 
-      
     };
     return (
       <div className="flex flex-1 flex-row">
-      <div className="w-3/12"> <Sidebar/></div>
-      <div className="flex flex-1 w-9/12 flex-col mt-5 items-center ">
+      <div className="flex flex-1 flex-col mt-5 items-center ">
 
        
         <div className="flex text-2xl font-sans px-10 rounded font-semibold w-fit  bg-[#4A628A] text-[#DFF2Eb] shadow-b-xl justify-center py-2 ">

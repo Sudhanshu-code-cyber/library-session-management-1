@@ -26,7 +26,6 @@ const Callingdata = async () => {
     <div className="flex flex-col items-center  px-5">
       <h1 className="text-3xl font-bold my-10 text-[#195758] mb-5">Student Records</h1>
      <div className="flex gap-10">
-     <div className="w-3/12"><Sidebar/></div>
       <table className="table-auto border-collapse border-2 border-[#195758] w-full max-w-screen-lg shadow-lg rounded-lg overflow-hidden">
         <thead>
           <tr className="bg-[#37babd] text-white text-lg">

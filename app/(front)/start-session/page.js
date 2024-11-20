@@ -25,7 +25,6 @@ const page = () => {
   };
   return (
     <div className='flex flex-1 flex-row gap-[15rem] ' >
-       <div className='w-3/12'><Sidebar/></div>
        <div className='flex gap-10 items-center justify-center pt-10'>
     
     
