@@ -9,19 +9,24 @@ import { IoSettingsOutline } from "react-icons/io5";
 const Sidebar = () => {
   return (
     <div>
-         <div className='grid grid-rows-7 w-3/12 mt-10 gap-4'>
-        <div className='flex gap-3 hover:shadow  items-center pl-2 py-3 flex-row rounded-lg hover:scale-105 hover:cursor-pointer bg-[#B9E5E8]'>
+         <div className='grid grid-rows-7  mt-10 gap-4'>
+        <Link href="/" className='flex gap-3 hover:shadow  items-center pl-2 py-3 flex-row rounded-lg hover:scale-105 hover:cursor-pointer bg-[#B9E5E8]'>
           <RxDashboard  className="size-6"/>
-          <Link href="" className='text-xl text-white font-bold font-sans'>Dashboard</Link>
-        </div>
-        <div className='flex gap-3 hover:shadow  items-center pl-2 py-3 flex-row rounded-lg hover:scale-105 hover:cursor-pointer bg-[#B9E5E8]'>
+          <h2 className='text-xl text-white font-bold font-sans'>Dashboard</h2>
+        </Link>
+        <Link href="/start-session" className='flex gap-3 hover:shadow  items-center pl-2 py-3 flex-row rounded-lg hover:scale-105 hover:cursor-pointer bg-[#B9E5E8]'>
           <IoPersonAddOutline  className="size-6"/>
-          <Link href="/login" className='text-xl text-white font-bold font-sans'>Add Session</Link>
-        </div>
-        <div className='flex gap-3 hover:shadow  items-center pl-2 py-3 flex-row rounded-lg hover:scale-105 hover:cursor-pointer bg-[#B9E5E8]'>
+          <h2  className='text-xl text-white font-bold font-sans'>Start Session</h2>
+        </Link>
+        <Link href="/addingSession" className='flex gap-3 hover:shadow  items-center pl-2 py-3 flex-row rounded-lg hover:scale-105 hover:cursor-pointer bg-[#B9E5E8]'>
+          <IoPersonAddOutline  className="size-6"/>
+          <h2 className='text-xl text-white font-bold font-sans'>Add New Session</h2>
+        </Link >
+        
+        <Link href="/manage-checkout" className='flex gap-3 hover:shadow  items-center pl-2 py-3 flex-row rounded-lg hover:scale-105 hover:cursor-pointer bg-[#B9E5E8]'>
           <MdExitToApp  className="size-6"/>
           <p className='text-xl text-white font-bold font-sans'>Manage CheckOuts</p>
-        </div>
+        </Link>
         <div className='flex gap-3 hover:shadow  items-center pl-2 py-3 flex-row rounded-lg hover:scale-105 hover:cursor-pointer bg-[#B9E5E8]'>
           <TbReport  className="size-6"/>
           <p className='text-xl text-white font-bold font-sans'>Reports</p>

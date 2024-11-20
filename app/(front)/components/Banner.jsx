@@ -16,7 +16,7 @@ const Banner = () => {
   return (
     <div className='flex gap-10 mt-10'>
       {/* sidebar */}
-      <div className='grid grid-rows-7 w-3/12 gap-4'>
+      {/* <div className='grid grid-rows-7 w-3/12 gap-4'>
         <div className='flex gap-3 hover:shadow  items-center pl-2 py-3 flex-row rounded-lg hover:scale-105 hover:cursor-pointer bg-[#B9E5E8]'>
           <RxDashboard  className="size-6"/>
           <p className='text-xl text-white font-bold font-sans'>Dashboard</p>
@@ -41,7 +41,7 @@ const Banner = () => {
           <RiGitRepositoryPrivateLine className="size-6"/>
           <p className='text-xl text-white font-bold font-sans'>Roles</p>
         </div>
-      </div>
+      </div> */}
       {/* sidebar end */}
       <div className="flex flex-col gap-5 w-9/12">
       <h2 className="text-2xl font-bold font-sans">Realtime Sessions(13)</h2>
