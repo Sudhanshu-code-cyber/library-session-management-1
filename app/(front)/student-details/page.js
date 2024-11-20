@@ -2,6 +2,7 @@ import Connect from "@/app/db/Connect";
 import NewSession from "@/app/models/NewSession";
 import { redirect } from "next/navigation"; 
 import React from "react";
+import Sidebar from "../components/Sidebar";
 
 const Callingdata = async () => {
   await Connect();
@@ -12,14 +13,17 @@ const Callingdata = async () => {
   const handleDelete = async (formData) => {
     "use server";
     let id = formData.get("recordId");
+    console.log(form)
 
     await NewSession.findByIdAndDelete(id); 
     redirect("/"); 
   };
 
   return (
-    <div className="flex flex-col items-center my-10 px-5">
-      <h1 className="text-3xl font-bold text-[#195758] mb-5">Student Records</h1>
+    <div className="flex flex-col items-center  px-5">
+      <h1 className="text-3xl font-bold my-10 text-[#195758] mb-5">Student Records</h1>
+     <div className="flex gap-10">
+     <div className="w-3/12"><Sidebar/></div>
       <table className="table-auto border-collapse border-2 border-[#195758] w-full max-w-screen-lg shadow-lg rounded-lg overflow-hidden">
         <thead>
           <tr className="bg-[#37babd] text-white text-lg">
@@ -60,6 +64,7 @@ const Callingdata = async () => {
           ))}
         </tbody>
       </table>
+     </div>
     </div>
   );
 };
