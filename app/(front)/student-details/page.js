@@ -4,8 +4,11 @@ import { redirect } from "next/navigation";
 import React from "react";
 
 const Callingdata = async () => {
-  await Connect();
+  
+  
+  
 
+  Connect();
  
   const CallingRecords = await NewSession.find();
 
@@ -14,7 +17,7 @@ const Callingdata = async () => {
     let id = formData.get("recordId");
 
     await NewSession.findByIdAndDelete(id); 
-    redirect("/"); 
+    redirect("/");  
   };
 
   return (

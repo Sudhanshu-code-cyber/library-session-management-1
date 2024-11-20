@@ -62,7 +62,7 @@
           Add Session
         </div>
 
-        <form action={handleInsert} className="flex justify-center bg-[#B9E5E6] mt-5 rounded shadow-xl p-5 flex-col gap-5 ">
+        <form encType="multipart/form-data" action={handleInsert} method="POST" className="flex justify-center bg-[#B9E5E6] mt-5 rounded shadow-xl p-5 flex-col gap-5 ">
           <div className="flex w-full justify-start gap-5 ">
             <label htmlFor="studentName" className="text-xl w-fit  font-semibold font-sans ">
               Student Name:
