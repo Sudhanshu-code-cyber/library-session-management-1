@@ -1,5 +1,5 @@
   import Connect from "@/app/db/Connect";
-  import newSession from "@/app/models/NewSession";
+import NewSession from "@/app/models/NewSession";
   import Link from "next/link";
   import { redirect } from "next/navigation";
   import React from "react";
@@ -37,7 +37,7 @@
         Connect();
   
         // Insert data into MongoDB using the newSession model
-        await newSession.create({
+        await NewSession.create({
           studentName,
           fatherName,
           add,
