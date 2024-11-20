@@ -1,8 +1,9 @@
   import Connect from "@/app/db/Connect";
-import NewSession from "@/app/models/NewSession";
+  import NewSession from "@/app/models/NewSession";
   import Link from "next/link";
   import { redirect } from "next/navigation";
   import React from "react";
+import Sidebar from "../components/Sidebar";
 
   const page = () => {
    
@@ -57,7 +58,11 @@ import NewSession from "@/app/models/NewSession";
       
     };
     return (
-      <div className="flex flex-col mt-5 items-center">
+      <div className="flex flex-1 flex-row">
+      <div className="w-3/12"> <Sidebar/></div>
+      <div className="flex flex-1 w-9/12 flex-col mt-5 items-center ">
+
+       
         <div className="flex text-2xl font-sans px-10 rounded font-semibold w-fit  bg-[#4A628A] text-[#DFF2Eb] shadow-b-xl justify-center py-2 ">
           Add Session
         </div>
@@ -149,6 +154,7 @@ import NewSession from "@/app/models/NewSession";
             Login here
           </Link>
         </div>
+      </div>
       </div>
     );
   };
