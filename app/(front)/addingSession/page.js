@@ -3,7 +3,7 @@
   import Link from "next/link";
   import { redirect } from "next/navigation";
   import React from "react";
-import Sidebar from "../components/Sidebar";
+  import Sidebar from "../components/Sidebar";
 
   const page = () => {
    
@@ -25,7 +25,7 @@ import Sidebar from "../components/Sidebar";
 
 
         if(checkData){
-          console.log("email already exist");
+          alert("email already exixt")
         }
         else{
         // Insert data into MongoDB using the newSession model
@@ -38,12 +38,13 @@ import Sidebar from "../components/Sidebar";
           email,
         });
       }
-      redirect("/student-details");
   
         // Redirect after successful insertion
       } catch (error) {
         console.error("Error inserting adding data", error);
       }
+      redirect("/student-details");
+
     };
     return (
       <div className="flex flex-1 flex-row">
