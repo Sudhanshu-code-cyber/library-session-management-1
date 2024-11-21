@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} px-[3%] antialiased bg-[#DFF2EB]`}
       >
         <Navbar/>
-        <div className="flex">
+        <div className="flex gap-10">
         <div className="w-3/12"><Sidebar/></div>
         <div className='w-9/12'>{children}</div>
         </div>
